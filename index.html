@@ -1,0 +1,225 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lakavat Umesh Chandra | Portfolio</title>
+  <meta name="description" content="Portfolio of Lakavat Umesh Chandra, B.Tech CSE @ IIT Jodhpur (2022–2026): full‑stack, data systems, and ML projects." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" id="home">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">LAKAVAT UMESH CHANDRA</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-photo">
+        <img src="assets/profile.png" alt="Lakavat Umesh Chandra" loading="eager" />
+      </div>
+      <div>
+        <h1>Hi, I'm Lakavat Umesh Chandra</h1>
+        <p class="lead">B.Tech CSE @ IIT Jodhpur (2022–2026). Building useful full‑stack systems, data‑centric apps, and practical ML tooling.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        </div>
+        <div class="links">
+          <a href="https://github.com/your-github" target="_blank" rel="noopener">GitHub</a>
+          <span>•</span>
+          <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+          <span>•</span>
+          <a href="mailto:b22cs029@iitj.ac.in">Email</a>
+          <span>•</span>
+          <a href="tel:+918008281740">+91 8008281740</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p>I’m a Computer Science student focused on shipping clean, reliable software—secure portals, full‑stack systems, and applied ML apps with production‑ready UIs and deployments.</p>
+      <p>Interests: MERN stack, relational databases with ACID properties, and ML pipelines from preprocessing to deployment. Open to software engineering and data/ML roles.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="grid three">
+        <div class="card">
+          <h3>Programming</h3>
+          <ul>
+            <li>Python</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Web & Tools</h3>
+          <ul>
+            <li>React, Redux, Tailwind CSS</li>
+            <li>Node.js, Express.js</li>
+            <li>MySQL</li>
+            <li>Git, Jupyter, Google Colab</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>ML & Libraries</h3>
+          <ul>
+            <li>Pandas, NumPy, scikit‑learn</li>
+            <li>CNNs, MTCNN, FER‑13, DenseNet</li>
+            <li>Flask, AWS EC2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tags">
+        <span>DSA</span>
+        <span>OOP</span>
+        <span>REST APIs</span>
+        <span>Auth</span>
+        <span>ACID</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <div class="project-head">
+          <h3>Emo‑Art: Emotion Detection on Art Portraits</h3>
+          <span class="pill">Feb 2025 – Apr 2025</span>
+        </div>
+        <p>Built a CNN‑based web app to recognize seven emotions in art portraits, integrating face detection, robust preprocessing, and a production‑ready Flask UI deployed on AWS EC2.</p>
+        <ul>
+          <li>DenseNet backbone with MTCNN‑based face crops and FER‑13‑style labels.</li>
+          <li>Latency‑aware inference pipeline optimized for web delivery.</li>
+          <li>Containerized deployment with environment‑specific configs.</li>
+        </ul>
+        <div class="tech">Python · CNN · FER‑13 · DenseNet · MTCNN · Flask · AWS</div>
+      </div>
+
+      <div class="project">
+        <div class="project-head">
+          <h3>Employee Data Management Portal</h3>
+          <span class="pill">Feb 2024 – Apr 2024</span>
+        </div>
+        <p>Secure portal for employees to access and edit assigned spreadsheet data with authentication and intuitive UI.</p>
+        <ul>
+          <li>Role‑based views and edit workflows backed by SheetDB.</li>
+          <li>Responsive React frontend with Redux and Tailwind.</li>
+          <li>Auditability and data consistency for updates.</li>
+        </ul>
+        <div class="tech">React · Redux · Tailwind · SheetDB</div>
+      </div>
+
+      <div class="project">
+        <div class="project-head">
+          <h3>Library Management System (Full‑stack)</h3>
+          <span class="pill">2024</span>
+        </div>
+        <p>End‑to‑end system with CRUD for student registration, book issue/return, fines, and admin workflows; designed with normalized schema and ACID guarantees.</p>
+        <ul>
+          <li>MySQL schema design and Express APIs.</li>
+          <li>React admin UI with secure forms and validations.</li>
+          <li>Clear separation of concerns and maintainable code.</li>
+        </ul>
+        <div class="tech">MySQL · React · Express · JavaScript · Tailwind</div>
+      </div>
+
+      <div class="project">
+        <div class="project-head">
+          <h3>EM Algorithm: Applications & Comparative Study</h3>
+          <span class="pill">Study</span>
+        </div>
+        <p>Compared EM, EME, and Direct Inversion for photon statistics retrieval and data imputation, focusing on accuracy, convergence, and robustness.</p>
+        <ul>
+          <li>Reproducible pipelines for all three methods.</li>
+          <li>Observed EME outperforming EM and Direct Inversion in stability.</li>
+        </ul>
+        <div class="tech">Python · Statistics · Optimization</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section alt">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="edu">
+        <h3>Indian Institute of Technology Jodhpur</h3>
+        <p>B.Tech in Computer Science and Engineering, 2022–2026 • CGPA: 6.7 (current)</p>
+        <p>Key Courses: DSA, PRML, DBMS, Software Engineering, DAA, Probability & Statistics, Stochastic Processes</p>
+      </div>
+      <div class="edu">
+        <h3>Narayana Junior College (State Board)</h3>
+        <p>Senior Secondary, 2021 • 98%</p>
+      </div>
+      <div class="edu">
+        <h3>Sri Chaithanya Techno School</h3>
+        <p>Secondary, 2019 • 100%</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2>Achievements</h2>
+      <ul class="bullets">
+        <li>Cleared demanding coursework at IIT Jodhpur; active in applied projects and self‑driven builds.</li>
+        <li>Hands‑on deployments and disciplined project documentation for reproducibility.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:b22cs029@iitj.ac.in">b22cs029@iitj.ac.in</a></li>
+        <li>Phone: <a href="tel:+918008281740">+91 8008281740</a></li>
+        <li>Location: IIT Jodhpur</li>
+      </ul>
+      <form class="contact-form" action="https://formspree.io/f/yourid" method="POST">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="_replyto" placeholder="Your email" required />
+        <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Lakavat Umesh Chandra</span>
+      <div class="links">
+        <a href="https://github.com/umesh-chandra-l" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/umesh-chandra-lakavat/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:b22cs029@iitj.ac.in">Email</a>
+      </div>
+    </div>
+    <a class="to-top" href="#home" aria-label="Back to top">↑</a>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
